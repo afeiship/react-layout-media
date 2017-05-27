@@ -1,0 +1,35 @@
+*{margin: 0;padding:0;box-sizing: border-box;}
+ul,li{list-style: none;}
+
+
+@import '../bower_components/webkit-sass-flexbox-grid/dist/webkit-sass-flexbox-grid.scss';
+.full-height{
+  height: 100%;
+}
+.hello-react-layout-media{
+  color:#F00;
+  padding:100px 20px;
+  position: relative;
+
+  img{
+    display: block;
+  }
+  button{
+    background: #3cc51f;
+    width:100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color:#FFF;
+    padding:20px;
+    border: none;
+
+    &:active{
+      background: darken(#3cc51f,10%);
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

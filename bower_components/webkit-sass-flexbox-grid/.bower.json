@@ -1,0 +1,35 @@
+{
+  "name": "webkit-sass-flexbox-grid",
+  "description": "Webkit sass/css flexbox grid system use ionic.",
+  "main": "dist",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flex",
+    "grid",
+    "webkit"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sass-flexbox-grid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webkit-sass-mixins": "afeiship/webkit-sass-mixins"
+  },
+  "_release": "571c1500e6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "571c1500e6128f65d30d7d8ad031cfff0a660ad8"
+  },
+  "_source": "https://github.com/afeiship/webkit-sass-flexbox-grid.git",
+  "_target": "*",
+  "_originalSource": "afeiship/webkit-sass-flexbox-grid",
+  "_direct": true
+}
