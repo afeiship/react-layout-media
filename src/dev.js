@@ -58,7 +58,7 @@ class App extends React.Component{
           <div className="left">
             <img src="http://placeholder.qiniudn.com/50x50" alt=""/>
           </div>
-          <ReactLayoutMediaItem className="col-center" style={{padding:'5px',fontSize:'12px'}}>
+          <ReactLayoutMediaItem align="center" style={{padding:'5px',fontSize:'12px'}}>
             <p>这是一段分分的文字，文字不长，但会很优美...</p>
           </ReactLayoutMediaItem>
         </ReactLayoutMedia>
@@ -81,6 +81,17 @@ class App extends React.Component{
             <p>BOdy...</p>
             <p>BOdy...</p>
             <p>BOdy...</p>
+          </ReactLayoutMediaItem>
+        </ReactLayoutMedia>
+
+
+        <h2>box  - vertical</h2>
+        <ReactLayoutMedia direction='vertical'  style={{padding:'2px'}}>
+          <div className="left">
+            <img src="http://placeholder.qiniudn.com/80x80" width="100%" alt=""/>
+          </div>
+          <ReactLayoutMediaItem>
+            <p style={{padding:'10px'}}>Some discription for media vertical.</p>
           </ReactLayoutMediaItem>
         </ReactLayoutMedia>
       </div>

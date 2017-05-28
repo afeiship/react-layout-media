@@ -8,17 +8,19 @@ import objectAssign from 'object-assign';
 export default class extends PureComponent{
   /*===properties start===*/
   static propTypes = {
-    className:PropTypes.string
+    className:PropTypes.string,
+    direction:PropTypes.string,
   };
 
   static defaultProps = {
+    direction:'horizontal'
   };
   /*===properties end===*/
 
   render(){
-    const {className,...props} = this.props;
+    const {className,direction,...props} = this.props;
     return (
-      <section {...props} className={classNames('row react-layout-media',className)} />
+      <section {...props} className={classNames('row react-layout-media',`box-${direction}`,className)} />
     );
   }
 }

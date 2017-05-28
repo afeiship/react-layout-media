@@ -9,6 +9,11 @@ export default class extends PureComponent{
   /*===properties start===*/
   static propTypes = {
     className:PropTypes.string,
+    align:PropTypes.string,
+  };
+
+  static defaultProps = {
+    align:'start'
   };
   /*===properties end===*/
 
@@ -19,6 +24,7 @@ export default class extends PureComponent{
       const newStyle = objectAssign({
         height:'100%'
       },style);
+
       return cloneElement(children,{
         style:newStyle,
         ...props
@@ -26,10 +32,11 @@ export default class extends PureComponent{
     }
     return children;
   }
+
   render(){
-    const {className,...props} = this.props;
+    const {className,align,...props} = this.props;
     return (
-      <div {...props} className={classNames('col react-layout-media-item',className)}>
+      <div {...props} className={classNames('col react-layout-media-item',`col-${align}`,className)}>
         {this.children}
       </div>
     );

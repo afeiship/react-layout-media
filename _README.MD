@@ -12,6 +12,10 @@ BACKUP_PROPERTIES
 BACKUP_USAGE
 ```
 
+## for demo:
+```bash
+bi afeiship/webkit-sass-flexbox-grid
+```
 
 
 ## resource:
