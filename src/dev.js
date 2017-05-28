@@ -6,51 +6,82 @@ import {
 } from 'react-layout-vertical';
 import {
   ReactLayoutMedia,
-  ReactLayoutMediaBody,
-  ReactLayoutMediaLeft,
-  ReactLayoutMediaRight,
+  ReactLayoutMediaItem,
 } from './main';
 
 /*===example start===*/
 
 // install: npm install afeiship/react-layout-media --save
-// import : import ReactLayoutMedia from 'react-layout-media'
 
+/*
+import {
+  ReactLayoutMedia,
+  ReactLayoutMediaItem
+*/
 class App extends React.Component{
   render(){
-    console.log(ReactLayoutMedia)
     return (
       <div className="hello-react-layout-media">
 
-        <h1>Media with Vertical</h1>
-        <ReactLayoutMedia padding="10px">
-          <ReactLayoutMediaLeft>
+        <h2>Media with Vertical</h2>
+        <ReactLayoutMedia style={{padding:'10px'}}>
+          <div className="left">
             <img src="http://placeholder.qiniudn.com/100x100" alt=""/>
-          </ReactLayoutMediaLeft>
+          </div>
 
-          <ReactLayoutMediaBody>
-            <ReactLayoutVertical className="full-height" justify='between'>
+          <ReactLayoutMediaItem  style={{padding:'0 10px'}}>
+            <ReactLayoutVertical justify='between'>
               <ReactLayoutItem className="top" style={{height:'50px'}}>top</ReactLayoutItem>
               <ReactLayoutItem className="bottom"  style={{height:'20px'}}>bottom</ReactLayoutItem>
             </ReactLayoutVertical>
-          </ReactLayoutMediaBody>
-          <ReactLayoutMediaRight>
-          Remove!
-          </ReactLayoutMediaRight>
+          </ReactLayoutMediaItem>
+          <div className="right" style={{color:'#999'}}>
+          status A
+          </div>
         </ReactLayoutMedia>
 
         <h2>Small media box</h2>
-        <ReactLayoutMedia padding="5px">
-          <ReactLayoutMediaLeft>
+        <ReactLayoutMedia  style={{padding:'5px'}}>
+          <div className="left">
             <img src="http://placeholder.qiniudn.com/80x80" alt=""/>
-          </ReactLayoutMediaLeft>
+          </div>
+          <ReactLayoutMediaItem style={{padding:'0 5px'}}>
+            <p>BOdy...</p>
+            <p>BOdy...</p>
+            <p>BOdy...</p>
+            <p>BOdy...</p>
+          </ReactLayoutMediaItem>
+        </ReactLayoutMedia>
 
-          <ReactLayoutMediaBody>
+        <h2>Share links</h2>
+        <ReactLayoutMedia>
+          <div className="left">
+            <img src="http://placeholder.qiniudn.com/50x50" alt=""/>
+          </div>
+          <ReactLayoutMediaItem className="col-center" style={{padding:'5px',fontSize:'12px'}}>
+            <p>这是一段分分的文字，文字不长，但会很优美...</p>
+          </ReactLayoutMediaItem>
+        </ReactLayoutMedia>
+
+
+        <h2>Small media box with MULTIPLE content</h2>
+        <ReactLayoutMedia  style={{padding:'5px'}}>
+          <div className="left">
+            <img src="http://placeholder.qiniudn.com/80x80" alt=""/>
+          </div>
+          <ReactLayoutMediaItem>
             <p>BOdy...</p>
             <p>BOdy...</p>
             <p>BOdy...</p>
             <p>BOdy...</p>
-          </ReactLayoutMediaBody>
+          </ReactLayoutMediaItem>
+
+          <ReactLayoutMediaItem>
+            <p>BOdy...</p>
+            <p>BOdy...</p>
+            <p>BOdy...</p>
+            <p>BOdy...</p>
+          </ReactLayoutMediaItem>
         </ReactLayoutMedia>
       </div>
     );

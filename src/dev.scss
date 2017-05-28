@@ -7,8 +7,7 @@ ul,li{list-style: none;}
   height: 100%;
 }
 .hello-react-layout-media{
-  color:#F00;
-  padding:100px 20px;
+  padding:10px 20px;
   position: relative;
 
   img{
@@ -32,4 +31,19 @@ ul,li{list-style: none;}
       outline: none;
     }
   }
+
+  h2{
+    margin:20px 0 14px 0;
+    font-size:16px;
+    color:#007aff;
+    padding-left: 10px;
+    border-left:3px solid #007aff;
+  }
+
+
+
+  .react-layout-media{
+    border: 1px solid #000;
+  }
 }
+

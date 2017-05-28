@@ -8,19 +8,17 @@ import objectAssign from 'object-assign';
 export default class extends PureComponent{
   /*===properties start===*/
   static propTypes = {
-    className:PropTypes.string,
-    padding:PropTypes.any,
+    className:PropTypes.string
   };
 
   static defaultProps = {
-    padding:0
   };
   /*===properties end===*/
 
   render(){
-    const {padding,className,...props} = this.props;
+    const {className,...props} = this.props;
     return (
-      <section {...props} style={{padding}} className={classNames('row react-layout-media',className)} />
+      <section {...props} className={classNames('row react-layout-media',className)} />
     );
   }
 }
